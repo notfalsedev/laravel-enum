@@ -1,3 +1,48 @@
+Laravel Enum
+===========================
+
+This package is a Laravel provider for "gerritdrost/phenum".<br/>
+Credits for making Enum work in PHP go to: G. Drost.<br/>
+More documentation is found here: https://github.com/gerritdrost/phenum.
+
+Installation
+============
+
+Add `artisaninweb/laravel-enum` as requirement to composer.json
+
+```javascript
+{
+    "require": {
+        "artisaninweb/laravel-enum": "1.0.*"
+    }
+}
+```
+
+Add the service provider in `config/app.php`.
+
+```php
+'Artisaninweb\Enum\EnumServiceProvider'
+```
+
+To use the `EnumMap` facade add this to the facades in `config/app.php`.
+
+```php
+'EnumMap' => 'Artisaninweb\Enum\Facades\EnumFacade'
+```
+
+Add a new folder with the name `Enums` to the directory `app/`.
+
+Generating enum
+============
+
+A command to make new enum's is provided.
+
+```php
+php artisan make:enum Fruit
+```
+
+License
+============
 The MIT License (MIT)
 
 Copyright (c) 2014 Michael van de Rijt

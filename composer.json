@@ -1,0 +1,23 @@
+{
+    "name": "artisaninweb/laravel-enum",
+    "description": "A common library for weCare Media projects.",
+    "keywords": ["laravel", "enum"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael van de Rijt",
+            "email": "me@mvdrijt.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "gerritdrost/phenum" : "1.0.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Artisaninweb\\Enum\\": "src",
+            "Artisaninweb\\Enum\\Tests\\": "tests"
+        }
+    },
+    "minimum-stability": "dev"
+}

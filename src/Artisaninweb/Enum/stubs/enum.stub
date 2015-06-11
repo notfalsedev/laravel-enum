@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Enums;
+
+use Artisaninweb\Enum\Enum;
+
+/**
+ * @method static DummyClass ENUM()
+ */
+class DummyClass extends Enum {
+
+    const ENUM = 'enum';
+
+}
