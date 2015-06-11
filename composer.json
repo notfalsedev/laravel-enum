@@ -1,6 +1,6 @@
 {
     "name": "artisaninweb/laravel-enum",
-    "description": "A common library for weCare Media projects.",
+    "description": "A provider for Enums in Laravel.",
     "keywords": ["laravel", "enum"],
     "license": "MIT",
     "authors": [

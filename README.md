@@ -35,7 +35,7 @@ Add a new folder with the name `Enums` to the directory `app/`.
 Generating enum
 ============
 
-A command to make new enum's is provided.
+A command to make new enum's.
 
 ```php
 php artisan make:enum Fruit
