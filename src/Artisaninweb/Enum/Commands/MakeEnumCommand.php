@@ -4,6 +4,7 @@ namespace Artisaninweb\Enum\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 use Symfony\Component\Console\Input\InputOption;
+use Illuminate\Support\Str;
 
 class MakeEnumCommand extends GeneratorCommand
 {
@@ -57,6 +58,8 @@ class MakeEnumCommand extends GeneratorCommand
    */
   protected function getPath($name)
   {
-    return env('ENUM_PATH', './app/Enums/') . str_replace('\\', '/', $name) . '.php';
+    $name = Str::replaceFirst($this->rootNamespace(), '', $name);
+    $path = env('ENUM_PATH', $this->rootNamespace().'Enums\\');
+    return str_replace('\\', '/',   $path . $name) . '.php';
   }
 }
